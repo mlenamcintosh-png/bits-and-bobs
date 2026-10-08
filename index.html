@@ -123,5 +123,55 @@ document.getElementById('year').textContent=new Date().getFullYear();
 if(WHATSAPP_NUMBER){const link=document.getElementById('contact-link');link.hidden=false;link.href='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hi Bits & Bobs! I’d like to ask about your shop.');document.getElementById('contact-text').textContent='Questions about a find? Message us and let’s chat.';}
 render();
 </script>
+<style>
+  .woodland-decor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: clamp(12px, 4vw, 50px);
+    padding: 30px 16px 12px;
+    overflow: hidden;
+    background: #f5f0e5;
+  }
+
+  .woodland-decor img {
+    width: clamp(65px, 15vw, 145px);
+    height: 150px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 5px rgba(68, 55, 46, 0.12));
+  }
+
+  .woodland-decor .butterfly {
+    align-self: center;
+    width: clamp(45px, 10vw, 90px);
+    transform: rotate(-12deg);
+  }
+
+  @media (max-width: 480px) {
+    .woodland-decor img {
+      height: 100px;
+    }
+  }
+</style>
+
+<div class="woodland-decor" aria-hidden="true">
+  <img
+    src="PNG/IMG_20260502_120609_669-removebg-preview.png"
+    alt=""
+  >
+  <img
+    class="butterfly"
+    src="PNG/IMG_20260502_120601_435-removebg-preview.png"
+    alt=""
+  >
+  <img
+    src="PNG/IMG_20260502_120631_941-removebg-preview.png"
+    alt=""
+  >
+  <img
+    src="PNG/IMG_20260502_120636_990-removebg-preview.png"
+    alt=""
+  >
+</div>
 </body>
 </html>
